@@ -1,7 +1,7 @@
-const {getToken} = require('../Utils/GetToken');
+const {getToken} = require('../../Utils/GetToken');
 const jwt = require('jsonwebtoken');
-const config = require('../../config/app');
-const User  =  require('../Models/User');
+const config = require('../../../config/app');
+const User  =  require('../../Models/User');
 
 function decodeToken(){
     return async function(req, res, next){

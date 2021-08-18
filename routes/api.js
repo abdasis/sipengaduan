@@ -5,7 +5,7 @@ const UserController = require('../app/Http/Controllers/UserController');
 const AuthController = require('../app/Http/Controllers/AuthController');
 const passport = require('passport');
 const localStrategi = require('passport-local').Strategy;
-const RequiredAuth = require('../app/Middlewares/RequiredAuth');
+const RequiredAuth = require('../app/Http/Middlewares/RequiredAuth');
 
 passport.use(new localStrategi({usernameField: 'email'}, AuthController.localStrategy));
 
