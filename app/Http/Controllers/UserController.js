@@ -9,7 +9,7 @@ async function register(req, res, next) {
         return res.json({
             code: 200,
             status: 'success',
-            message: 'Data semua pengaduan berhasil diambil',
+            message: 'Register berhasil',
             data: user
         })
     }catch (e) {
